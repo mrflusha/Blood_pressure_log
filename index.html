@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id = 'LOL'>
+		<span class="spinner" display = "none"></span>
+	</div>
+	<div id = 'body_window'>
+		<div id = 'header_body_window'>
+			<div id = 'title'>Дневник давления 💗</div>
+			<div id = info_button>i</div>
+		</div>
+		<div id = 'blood_presshur_30days_history_button'>Посмотреть динамику месяца</div>
+		<div id = "blood_presshur_7days_history">
+			<div id = "free">Динамика за последние 5 дней:</div>
+		</div>
+		
+			<button id = "openInputWindow" class= 'button'>Добавить/Изменить сегодняшнее значение</button>
+		
+	</div>
+	<div id="info_window">
+		<div class = "backButton"><</div>
+		<div id = "informationBlock">
+					<p>
+						Артериальное давление (АД) — это сила, с которой кровь давит на стенки сосудов. Оно состоит из двух показателей: систолического (верхнего) и диастолического (нижнего), которые измеряются в миллиметрах ртутного столба (мм рт. ст.).
+						<br>
+						Оптимальное АД: <strong>меньше 120 / 80</strong>
+						<br>
+
+						Нормальное АД: <strong>120–129 / 80–84</strong>
+						<br>
+
+						Высокое нормальное: <strong>130–139 / 85–89</strong>
+						<br>
+
+						Гипертония (высокое): <strong>от 140 / 90 и выше</strong>
+						<br>
+
+						Гипотония (низкое): <strong>меньше 100 / 60</strong>
+						<br>
+						Для точного замера измеряйте давление сидя, после 5 минут отдыха, зафиксировав руку на уровне сердца и не разговаривая.
+
+					</p>
+		</div>
+	</div>
+	<div id = 'input_window'>
+		<div class = "backButton"><</div>
+		<div id = 'blood_preshur_input'>
+			<input type="text" name="" disabled id = "todayValue">
+			<select size = "2" id = "timeOfDaySelect">
+				<option value="0">Утро</option>
+				<option value="1">Вечер</option>
+			</select>
+			<div id = 'blood_preshur_input_form'>
+				<div class = 'blood_preshur_title_box'>
+					<div class = "blood_preshur_title">Верхнее</div>
+					<input type="text" class = "inputPreshurInput" name="" placeholder='120' id = 'up' min = '10' max = '300' maxlength = '3' oninput="if(this.value.length > 3) this.value = this.slice(0, 3);">			
+				</div>
+				<div class = 'blood_preshur_title_box'>				
+					<div class = "blood_preshur_title">Нижнее</div>
+					<input type="text" class = "inputPreshurInput" name="" placeholder="80" id = 'down' min = '10' max = '300' maxlength = '3' oninput="if(this.value.length > 3) this.value = this.slice(0, 3);">
+				</div>
+				<div class = 'blood_preshur_title_box'>	
+					<div class = "blood_preshur_title">Пульс</div>
+					<input type="text" class = "inputPreshurInput" name="" placeholder="60" id = 'pulse' min = '10' max = '300' maxlength = '3' oninput="if(this.value.length > 3) this.value = this.slice(0, 3);">
+				</div>
+			</div>
+			<div id = "form_output_button" class= 'button'>Добавить/Изменить</div>
+		</div>		
+	</div>
+
+	<div id = "info30dayWindow">
+		<div class = "backButton"><</div>
+		<div id = "a30days_free">Динамика за последние 30 дней:</div>
+	</div>
+
+	<div id="empty_input" >
+      <div id = 'empty_input_block' >Вы не ввели значение</div>
+    </div>
+
+    <div id = "adv_block_flex">
+		<div id="adv_block"></div>
+	</div>
+
+	<script src="vk.js"></script>
+	<script src="time.js"></script>
+	<script src="script.js"></script>
+
+
+
+</body>
+</html>

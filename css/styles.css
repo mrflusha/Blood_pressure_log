@@ -1,0 +1,383 @@
+*{
+	margin: 0;
+	padding: 0;
+
+
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+
+body{
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;
+	background: #d69595;
+	color: #000 ;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden auto;
+
+}
+
+
+#body_window{
+	display: flex;
+	justify-content: flex-start;
+
+	height: 95vh;
+	
+	flex-direction: column;
+	overflow: hidden;
+	align-content: center;
+	justify-content: space-around;
+	width: 95vw;
+	align-items: center;
+
+
+
+
+}
+#header_body_window{
+	margin-top: 2vh;
+	display: flex;
+	flex-direction: row;
+	width: 95vw;
+	justify-content: space-around;
+}
+#title{
+	display: flex;
+	font-size: 6vmin;
+}
+#info_button{
+	display: flex;
+	border: 1px solid black;
+	border-radius: 50%;
+  width: 10vmin;
+  height: 10vmin;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vmin;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;
+		background: #453b3b;
+	color: #FFF;
+}
+
+#blood_presshur_30days_history_button{
+	display: flex;
+	font-size: 4vmin;
+	border: 2px solid #5340dd;
+	border-radius: 5px;
+	width: 65vmin;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	background: #453b3b;
+	color: #FFF;
+}
+
+
+#blood_presshur_7days_history{
+	display: flex;
+	flex-direction: column;
+	background: grey;
+	color: #FFF;
+	
+	align-items: center;
+
+}
+
+.day{
+	display: flex;
+	flex-direction: row;
+	font-size: 4vmin;
+}
+.date{
+	display: flex;
+	border: 1px solid black;
+	padding-right: 5vw;
+	background: #5d4141;
+	color: white;
+}
+.values{
+	display: flex;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	font-size: 3vmin;
+	align-items: center;
+	width: 15vh;
+	height: 5vh;
+	justify-content: center;
+}
+
+.timesOfDay{
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid black;
+	background: grey;
+}
+
+#timeOfDaySelect{
+	display: flex;
+	width: 55vw;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+
+#blood_preshur_input{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95vw;
+	height: 65vh;
+	min-height: 55vh;
+	justify-content: space-around;
+}
+
+#blood_preshur_input_form{
+	display: flex;
+	font-size: 3vmin;
+	flex-direction: column;
+}
+.blood_preshur_title_box{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.blood_preshur_title{
+	display: flex;
+	font-size: 2vmin;
+	justify-content: flex-start;
+	font-size: 4vmin;
+
+}
+.inputPreshurInput {
+	display: flex;
+	max-width: 15vw;
+	text-align: center;
+	font-size: 4vmin;
+
+}
+
+#form_output_button{
+	display: flex;
+
+	border: 1px solid green;
+	border-radius: 2px;
+	font-size: 5vmin;
+	color: #FFF;
+	background: #453b3b;
+}
+
+#free{
+	display: flex;
+	font-size: 3vmin;
+	background: black;
+	height: 4vh;
+	width: 75vw;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+
+#input_window{
+	display: none;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+
+.backButton{
+	margin-top: 8vh;
+	display: flex;
+	border: 1px solid black;
+	border-radius: 50%;
+  width: 10vmin;
+  height: 10vmin;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vmin;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;
+		background: #453b3b;
+	color: #FFF;
+}
+
+
+
+#empty_input{
+	display: none;
+	flex-direction: column-reverse;
+	width: 100vw;
+	height: 100vh;
+	
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+}
+#empty_input_block{
+	display: flex;
+	background-color: white;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;;
+	
+	height: 13vh;
+	font-size: 5vmin;
+	width: 70vw;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+
+#openInputWindow{
+		display: flex;
+
+	border: 1px solid green;
+	border-radius: 2px;
+	font-size: 5vmin;
+	color: #FFF;
+	background: #453b3b;
+	width: 55vw;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#info_window{
+	display: none;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+	min-height: 85vh;
+	width: 95vw;
+}
+
+#informationBlock{
+	display: flex;
+	align-content: center;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;;
+	font-size: 4vmin;
+	background-color: #453b3b;
+	color: white;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+
+#info30dayWindow{
+	display: none;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	min-height: 85vh;
+	width: 95vw;
+	max-width: 96vw;
+	overflow-y: hidden;
+	overflow-x: visible;
+	font-size: 4vmin;
+}
+
+#a30days_free{
+	margin-top: 2vh;
+	display: flex;
+	height: 5vh;
+	background: black;
+	color: white;
+	width: 75vw;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+#LOL{
+
+	display: flex;
+	overflow: hidden;
+	position: fixed;
+
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #FFF;
+	z-index: 5;
+	color: RED;
+	flex-direction: column;
+	font-family: 'Noto', sans-serif;
+	font-size: 6vh;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+
+}
+
+.spinner {
+    height: 0.7em;
+    width: 0.7em;
+    border-left: 0.7vh solid greenyellow;
+    border-bottom: 0.7vh solid greenyellow;
+    border-right: 0.7vh solid greenyellow;
+    border-top: 0.7vh solid transparent;
+    border-radius: 50vh;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#adv_block_flex{
+  display: none;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+    background-color: white;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+}
+#adv_block{
+  display: flex;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;
+  font-size: 5vmin;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+
+}
