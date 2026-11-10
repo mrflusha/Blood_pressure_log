@@ -89,11 +89,11 @@ getValues = async () => {
 																			<div class = "date">${datesOfLastMonth[i].toLocaleDateString('ru-RU')}</div>
 																			<div class = "timesOfDay"> 
 																				<div class = "values">УТРО</div>
-																				<div class = "values valuesOfChange">${valuesFromServer[`${datesOfLastMonthUnix[i]}_0`].valueOfUpper}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_0`].valueOfDown}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_0`].pulse}</div>
+																				<div class = "values valuesOfChange datBug">${valuesFromServer[`${datesOfLastMonthUnix[i]}_0`].valueOfUpper}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_0`].valueOfDown}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_0`].pulse}</div>
 																			</div>
 																			<div class = "timesOfDay">
 																				<div class = "values">ВЕЧЕР</div>
-																				<div class = "values valuesOfChange">${valuesFromServer[`${datesOfLastMonthUnix[i]}_1`].valueOfUpper}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_1`].valueOfDown}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_1`].pulse}</div>
+																				<div class = "values valuesOfChange datBug">${valuesFromServer[`${datesOfLastMonthUnix[i]}_1`].valueOfUpper}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_1`].valueOfDown}/${valuesFromServer[`${datesOfLastMonthUnix[i]}_1`].pulse}</div>
 																			</div>
 																		</div>`)
 	}
@@ -137,10 +137,13 @@ getValues = async () => {
 			console.log(todayDateObj.date)
 			save_value(todayDateObj.date, jsonString)
 			const dateNowDom = document.getElementsByClassName("valuesOfChange")
+			const datBug = document.getElementsByClassName("datBug")
 			if ((todayDateObj.timeOfDay === "0") && todayDateObj.valueOfUpper != "" && todayDateObj.valueOfDown != "" && todayDateObj.pulse != "") {
 				dateNowDom[dateNowDom.length - 2].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
+				datBug[datBug.length - 2].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
 			}else if((todayDateObj.timeOfDay === "1") && todayDateObj.valueOfUpper != "" && todayDateObj.valueOfDown != "" && todayDateObj.pulse != "") {
 				dateNowDom[dateNowDom.length - 1].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
+				datBug[datBug.length - 1].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
 
 			}
 		}
