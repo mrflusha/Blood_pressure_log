@@ -381,3 +381,29 @@ body{
             user-select: none; /* Non-prefixed version, currently*/
 
 }
+
+
+
+#goodInput{
+	display: none;
+	flex-direction: column-reverse;
+	width: 100vw;
+	height: 100vh;
+	
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+}
+#good_input_block{
+	display: flex;
+	background-color: white;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Neue', system-ui, sans-serif;;
+	
+	height: 13vh;
+	font-size: 5vmin;
+	width: 70vw;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+}

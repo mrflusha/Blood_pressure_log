@@ -147,6 +147,7 @@ getValues = async () => {
 
 			}
 		}
+		goodInput()
 }
 document.getElementById("LOL").style.display = "none"
 
@@ -164,6 +165,13 @@ emptyInput = () => {
 	document.getElementById("empty_input").style.display = "flex"
 	setTimeout(() => {
 		document.getElementById("empty_input").style.display = "none";
+	}
+		,800)
+}
+goodInput = () => {
+	document.getElementById("goodInput").style.display = "flex"
+	setTimeout(() => {
+		document.getElementById("goodInput").style.display = "none";
 	}
 		,800)
 }
