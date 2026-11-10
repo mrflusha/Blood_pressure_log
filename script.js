@@ -141,13 +141,14 @@ getValues = async () => {
 			if ((todayDateObj.timeOfDay === "0") && todayDateObj.valueOfUpper != "" && todayDateObj.valueOfDown != "" && todayDateObj.pulse != "") {
 				dateNowDom[dateNowDom.length - 2].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
 				datBug[datBug.length - 2].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
+				goodInput()
 			}else if((todayDateObj.timeOfDay === "1") && todayDateObj.valueOfUpper != "" && todayDateObj.valueOfDown != "" && todayDateObj.pulse != "") {
 				dateNowDom[dateNowDom.length - 1].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
 				datBug[datBug.length - 1].innerText = `${todayDateObj.valueOfUpper}/${todayDateObj.valueOfDown}/${todayDateObj.pulse}`
 
+				goodInput()
 			}
 		}
-		goodInput()
 }
 document.getElementById("LOL").style.display = "none"
 
