@@ -146,6 +146,9 @@ body{
 	height: 65vh;
 	min-height: 55vh;
 	justify-content: space-around;
+	background: grey;
+	border: 1px solid black;
+	border-radius: 1vmin;
 }
 
 #blood_preshur_input_form{
