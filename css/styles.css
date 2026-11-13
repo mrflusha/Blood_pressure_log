@@ -92,8 +92,9 @@ body{
 	flex-direction: column;
 	background: grey;
 	color: #FFF;
-	
+	max-width: 65vw;
 	align-items: center;
+	justify-content: center;
 
 }
 
@@ -101,6 +102,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	font-size: 4vmin;
+
 }
 .date{
 	display: flex;
@@ -115,7 +117,7 @@ body{
 	border-top: 1px solid black;
 	font-size: 3vmin;
 	align-items: center;
-	width: 15vh;
+	width: 20vh;
 	height: 5vh;
 	justify-content: center;
 }
@@ -187,7 +189,7 @@ body{
 	font-size: 3vmin;
 	background: black;
 	height: 4vh;
-	width: 75vw;
+	width: 55vw;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -286,7 +288,7 @@ body{
 #info30dayWindow{
 	display: none;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
 	min-height: 85vh;
 	width: 95vw;
@@ -302,7 +304,7 @@ body{
 	height: 5vh;
 	background: black;
 	color: white;
-	width: 75vw;
+	width: 55vw;
 	justify-content: center;
 	align-items: center;
 
