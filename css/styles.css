@@ -137,6 +137,7 @@ body{
 	white-space: nowrap;
 	border: 1px solid black;
 	color: white;
+	background: grey;
 }
 
 .values{
@@ -146,6 +147,7 @@ body{
 	text-overflow: ellipsis;
 	font-size: 3vmin;
 	border: 1px solid black;
+	color: #FFF;
 }
 /*
 .values{
@@ -163,7 +165,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	border-right: 1px solid black;
-	background: grey;
 	max-width: 75vw;
 }
 */
@@ -171,6 +172,7 @@ body{
 	max-width: none;         /* убрать 75vw */
 	flex: 1 1 0;             /* делим оставшееся место */
 	min-width: 0;
+	background: grey;
 }
 
 #timeOfDaySelect{
